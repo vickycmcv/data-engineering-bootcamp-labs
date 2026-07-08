@@ -89,7 +89,7 @@ print(high_sales)
 # Lab 13: Vectorized Array Operations
 prices = np.array([100.0, 200.0, 300.0])
 taxed = prices*1.05
-print(f"First: {taxed}")
+print(f"Taxed: {taxed}")
 discounted = prices - (prices * 0.1)
 print(f"Discounted: {discounted}")
 
@@ -99,7 +99,7 @@ total=np.sum(data) # or data.sum()
 minimun=np.min(data) # or data.min()
 maximum=np.max(data) # or data.max()
 mean=np.mean(data) # or data.mean()
-print(f"Total: {total}")
+print(f"Sum: {total}")
 print(f"Minimum: {minimun}")
 print(f"Maximum: {maximum}")
 print(f"Mean: {mean}")
