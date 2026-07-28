@@ -1,0 +1,59 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+  
+  - name: customer_sales
+    description: "Total revenue per customer."
+    columns:
+      - name: customer
+        description: "Customer name."
+        data_tests:
+          - unique
+          - not_null
+      - name: total_sales
+        description: "Sum of orders amount."
+        data_tests:
+          - not_null
+
+  - name: customer_segmentation
+    description: "Customer segmentation based on customer sales."
+    columns:
+      - name: customer
+        description: "Customer name"
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('customer_sales')
+                field: customer
+      - name: total_sales
+        description: "Sum of orders amount."
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('customer_sales')
+                field: total_sales
+      - name: customer_segment
+        description: "Customer category based on total sales."
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Low Value', 'Medium Value', 'High Value']

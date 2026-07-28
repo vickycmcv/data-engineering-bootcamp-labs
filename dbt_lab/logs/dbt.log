@@ -1,0 +1,290 @@
+[0m10:18:59.501479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000129151E4AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012912A691D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012917A17B10>]}
+
+
+============================== 10:18:59.516779 | 30d7e92b-e34f-4156-a1a1-1c32e8152d6f ==============================
+[0m10:18:59.516779 [info ] [MainThread]: Running with dbt=1.12.0
+[0m10:18:59.518683 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\maryd\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init my_first_project', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m10:18:59.664545 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\maryd\.dbt
+[0m10:18:59.670323 [debug] [MainThread]: Starter project path: D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\.venv\Lib\site-packages\dbt\include\starter_project
+[0m10:18:59.736676 [info ] [MainThread]: Setting up your profile.
+[0m10:19:06.345959 [info ] [MainThread]: Profile my_first_project written to C:\Users\maryd\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m10:19:06.351928 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m10:19:06.353397 [info ] [MainThread]: dbt version: 1.12.0
+[0m10:19:06.354695 [info ] [MainThread]: python version: 3.14.5
+[0m10:19:06.355887 [info ] [MainThread]: python path: D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\.venv\Scripts\python.exe
+[0m10:19:06.357015 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m10:19:06.529253 [info ] [MainThread]: Using profiles dir at C:\Users\maryd\.dbt
+[0m10:19:06.530667 [info ] [MainThread]: Using profiles.yml file at C:\Users\maryd\.dbt\profiles.yml
+[0m10:19:06.531822 [info ] [MainThread]: Using dbt_project.yml file at D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\dbt_demo\my_first_project\dbt_project.yml
+[0m10:19:06.536932 [info ] [MainThread]: adapter type: duckdb
+[0m10:19:06.539803 [info ] [MainThread]: adapter version: 1.10.1
+[0m10:19:06.817485 [info ] [MainThread]: Configuration:
+[0m10:19:06.818793 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:19:06.820017 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:19:06.821083 [info ] [MainThread]: Required dependencies:
+[0m10:19:06.821913 [debug] [MainThread]: Executing "git --help"
+[0m10:19:06.906798 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:19:06.908151 [debug] [MainThread]: STDERR: "b''"
+[0m10:19:06.909598 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:19:06.910981 [info ] [MainThread]: Connection:
+[0m10:19:06.912374 [info ] [MainThread]:   database: dev
+[0m10:19:06.913726 [info ] [MainThread]:   schema: main
+[0m10:19:06.915278 [info ] [MainThread]:   path: dev.duckdb
+[0m10:19:06.918094 [info ] [MainThread]:   config_options: None
+[0m10:19:06.919785 [info ] [MainThread]:   extensions: None
+[0m10:19:06.921220 [info ] [MainThread]:   settings: {}
+[0m10:19:06.922327 [info ] [MainThread]:   external_root: .
+[0m10:19:06.923364 [info ] [MainThread]:   use_credential_provider: None
+[0m10:19:06.924480 [info ] [MainThread]:   attach: None
+[0m10:19:06.926062 [info ] [MainThread]:   filesystems: None
+[0m10:19:06.927849 [info ] [MainThread]:   remote: None
+[0m10:19:06.929084 [info ] [MainThread]:   plugins: None
+[0m10:19:06.930437 [info ] [MainThread]:   disable_transactions: False
+[0m10:19:06.932051 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m10:19:07.664260 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m10:19:15.343794 [debug] [MainThread]: Using duckdb connection "debug"
+[0m10:19:15.344808 [debug] [MainThread]: On debug: select 1 as id
+[0m10:19:15.345691 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:19:15.412733 [debug] [MainThread]: SQL status: OK in 0.067 seconds
+[0m10:19:15.415989 [debug] [MainThread]: On debug: Close
+[0m10:19:15.419777 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:19:15.421634 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:19:15.422986 [info ] [MainThread]: Your new dbt project "my_first_project" was created!
+Initialized new project in D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\dbt_demo\my_first_project\my_first_project
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:19:15.427436 [debug] [MainThread]: Command `dbt init` succeeded at 10:19:15.426993 after 16.56 seconds
+[0m10:19:15.429678 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:19:15.431001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012917873A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012917DEAB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012917D46580>]}
+[0m10:19:15.432894 [debug] [MainThread]: Flushing usage events
+[0m10:19:15.989973 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:53:42.054433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000176BFEA4AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000176BD7391D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000176C26D7B10>]}
+
+
+============================== 11:53:42.065448 | 1583a0ee-4154-4a8a-9c74-2931b1fd1715 ==============================
+[0m11:53:42.065448 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:53:42.067130 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\maryd\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init customer_revenue_analytics', 'log_path': 'logs'}
+[0m11:53:42.240086 [debug] [MainThread]: Starter project path: D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\.venv\Lib\site-packages\dbt\include\starter_project
+[0m11:53:42.299327 [info ] [MainThread]: Setting up your profile.
+[0m11:53:47.164683 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m11:53:47.165981 [info ] [MainThread]: dbt version: 1.12.0
+[0m11:53:47.167049 [info ] [MainThread]: python version: 3.14.5
+[0m11:53:47.168027 [info ] [MainThread]: python path: D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\.venv\Scripts\python.exe
+[0m11:53:47.168948 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m11:53:47.334365 [info ] [MainThread]: Using profiles dir at C:\Users\maryd\.dbt
+[0m11:53:47.335491 [info ] [MainThread]: Using profiles.yml file at C:\Users\maryd\.dbt\profiles.yml
+[0m11:53:47.336472 [info ] [MainThread]: Using dbt_project.yml file at D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\dbt_demo\customer_revenue_analytics\dbt_project.yml
+[0m11:53:47.342785 [info ] [MainThread]: adapter type: duckdb
+[0m11:53:47.343783 [info ] [MainThread]: adapter version: 1.10.1
+[0m11:53:47.594403 [info ] [MainThread]: Configuration:
+[0m11:53:47.595582 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:53:47.597224 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:53:47.598698 [info ] [MainThread]: Required dependencies:
+[0m11:53:47.599896 [debug] [MainThread]: Executing "git --help"
+[0m11:53:47.690755 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:53:47.691914 [debug] [MainThread]: STDERR: "b''"
+[0m11:53:47.692850 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:53:47.693712 [info ] [MainThread]: Connection:
+[0m11:53:47.694709 [info ] [MainThread]:   database: dev
+[0m11:53:47.696137 [info ] [MainThread]:   schema: main
+[0m11:53:47.697125 [info ] [MainThread]:   path: dev.duckdb
+[0m11:53:47.698089 [info ] [MainThread]:   config_options: None
+[0m11:53:47.699201 [info ] [MainThread]:   extensions: None
+[0m11:53:47.701946 [info ] [MainThread]:   settings: {}
+[0m11:53:47.703189 [info ] [MainThread]:   external_root: .
+[0m11:53:47.704174 [info ] [MainThread]:   use_credential_provider: None
+[0m11:53:47.705197 [info ] [MainThread]:   attach: None
+[0m11:53:47.706619 [info ] [MainThread]:   filesystems: None
+[0m11:53:47.708006 [info ] [MainThread]:   remote: None
+[0m11:53:47.709079 [info ] [MainThread]:   plugins: None
+[0m11:53:47.710015 [info ] [MainThread]:   disable_transactions: False
+[0m11:53:47.711252 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m11:53:48.519777 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m11:53:48.697712 [debug] [MainThread]: Using duckdb connection "debug"
+[0m11:53:48.698424 [debug] [MainThread]: On debug: select 1 as id
+[0m11:53:48.699013 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:53:48.762989 [debug] [MainThread]: SQL status: OK in 0.064 seconds
+[0m11:53:48.764817 [debug] [MainThread]: On debug: Close
+[0m11:53:48.765840 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:53:48.766737 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:53:48.767920 [info ] [MainThread]: Your new dbt project "customer_revenue_analytics" was created!
+Initialized new project in D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\dbt_demo\customer_revenue_analytics\customer_revenue_analytics
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:53:48.770994 [debug] [MainThread]: Command `dbt init` succeeded at 11:53:48.770729 after 7.27 seconds
+[0m11:53:48.771764 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:53:48.772636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000176C252FA80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000176C2AF6B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000176C2A42580>]}
+[0m11:53:48.773435 [debug] [MainThread]: Flushing usage events
+[0m11:53:49.518717 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:32:53.420297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0DA9B4AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0D82391D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0DD1EBB10>]}
+
+
+============================== 12:32:53.430819 | 560ef9a7-d25b-420c-9798-85928c610896 ==============================
+[0m12:32:53.430819 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:32:53.433456 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\maryd\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init product_performance_dashboard', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m12:32:53.587520 [debug] [MainThread]: Starter project path: D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\.venv\Lib\site-packages\dbt\include\starter_project
+[0m12:32:53.641744 [info ] [MainThread]: Setting up your profile.
+[0m12:32:56.421656 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m12:32:56.423059 [info ] [MainThread]: dbt version: 1.12.0
+[0m12:32:56.424182 [info ] [MainThread]: python version: 3.14.5
+[0m12:32:56.424973 [info ] [MainThread]: python path: D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\.venv\Scripts\python.exe
+[0m12:32:56.425779 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:32:56.581019 [info ] [MainThread]: Using profiles dir at C:\Users\maryd\.dbt
+[0m12:32:56.581982 [info ] [MainThread]: Using profiles.yml file at C:\Users\maryd\.dbt\profiles.yml
+[0m12:32:56.582888 [info ] [MainThread]: Using dbt_project.yml file at D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\dbt_demo\product_performance_dashboard\dbt_project.yml
+[0m12:32:56.588197 [info ] [MainThread]: adapter type: duckdb
+[0m12:32:56.590501 [info ] [MainThread]: adapter version: 1.10.1
+[0m12:32:56.833006 [info ] [MainThread]: Configuration:
+[0m12:32:56.834107 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:32:56.835560 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:32:56.836734 [info ] [MainThread]: Required dependencies:
+[0m12:32:56.837958 [debug] [MainThread]: Executing "git --help"
+[0m12:32:56.965740 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:32:56.968543 [debug] [MainThread]: STDERR: "b''"
+[0m12:32:56.969611 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:32:56.975882 [info ] [MainThread]: Connection:
+[0m12:32:56.978992 [info ] [MainThread]:   database: dev
+[0m12:32:56.981695 [info ] [MainThread]:   schema: main
+[0m12:32:56.984088 [info ] [MainThread]:   path: dev.duckdb
+[0m12:32:56.985468 [info ] [MainThread]:   config_options: None
+[0m12:32:56.988591 [info ] [MainThread]:   extensions: None
+[0m12:32:56.990654 [info ] [MainThread]:   settings: {}
+[0m12:32:56.993302 [info ] [MainThread]:   external_root: .
+[0m12:32:57.005573 [info ] [MainThread]:   use_credential_provider: None
+[0m12:32:57.010176 [info ] [MainThread]:   attach: None
+[0m12:32:57.011281 [info ] [MainThread]:   filesystems: None
+[0m12:32:57.012333 [info ] [MainThread]:   remote: None
+[0m12:32:57.013687 [info ] [MainThread]:   plugins: None
+[0m12:32:57.014884 [info ] [MainThread]:   disable_transactions: False
+[0m12:32:57.016741 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:32:57.521414 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m12:32:57.635250 [debug] [MainThread]: Using duckdb connection "debug"
+[0m12:32:57.636029 [debug] [MainThread]: On debug: select 1 as id
+[0m12:32:57.636566 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:32:57.679215 [debug] [MainThread]: SQL status: OK in 0.043 seconds
+[0m12:32:57.680604 [debug] [MainThread]: On debug: Close
+[0m12:32:57.681614 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:32:57.682396 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:32:57.683516 [info ] [MainThread]: Your new dbt project "product_performance_dashboard" was created!
+Initialized new project in D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\dbt_demo\product_performance_dashboard\product_performance_dashboard
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:32:57.686101 [debug] [MainThread]: Command `dbt init` succeeded at 12:32:57.685805 after 4.76 seconds
+[0m12:32:57.686775 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:32:57.687429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0DD043A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0DD61AB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0DD566580>]}
+[0m12:32:57.688160 [debug] [MainThread]: Flushing usage events
+[0m12:32:58.442555 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:51:05.815054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264C59F4AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264C32791D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264C8227B10>]}
+
+
+============================== 12:51:05.824297 | f6ec8d60-57b6-4639-aa2c-b2f88b5f065e ==============================
+[0m12:51:05.824297 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:51:05.826213 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\maryd\\.dbt', 'invocation_command': 'dbt init customer_segmentation_pipeline', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m12:51:05.956622 [debug] [MainThread]: Starter project path: D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\.venv\Lib\site-packages\dbt\include\starter_project
+[0m12:51:06.016968 [info ] [MainThread]: Setting up your profile.
+[0m12:51:10.146015 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m12:51:10.147899 [info ] [MainThread]: dbt version: 1.12.0
+[0m12:51:10.148877 [info ] [MainThread]: python version: 3.14.5
+[0m12:51:10.149875 [info ] [MainThread]: python path: D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\.venv\Scripts\python.exe
+[0m12:51:10.151075 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:51:10.340394 [info ] [MainThread]: Using profiles dir at C:\Users\maryd\.dbt
+[0m12:51:10.342079 [info ] [MainThread]: Using profiles.yml file at C:\Users\maryd\.dbt\profiles.yml
+[0m12:51:10.343249 [info ] [MainThread]: Using dbt_project.yml file at D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\dbt_demo\customer_segmentation_pipeline\dbt_project.yml
+[0m12:51:10.348223 [info ] [MainThread]: adapter type: duckdb
+[0m12:51:10.349083 [info ] [MainThread]: adapter version: 1.10.1
+[0m12:51:10.601659 [info ] [MainThread]: Configuration:
+[0m12:51:10.602769 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:51:10.604114 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:51:10.605323 [info ] [MainThread]: Required dependencies:
+[0m12:51:10.606850 [debug] [MainThread]: Executing "git --help"
+[0m12:51:10.786378 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:51:10.788403 [debug] [MainThread]: STDERR: "b''"
+[0m12:51:10.789847 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:51:10.791252 [info ] [MainThread]: Connection:
+[0m12:51:10.792439 [info ] [MainThread]:   database: dev
+[0m12:51:10.793552 [info ] [MainThread]:   schema: main
+[0m12:51:10.795589 [info ] [MainThread]:   path: dev.duckdb
+[0m12:51:10.797233 [info ] [MainThread]:   config_options: None
+[0m12:51:10.798567 [info ] [MainThread]:   extensions: None
+[0m12:51:10.818034 [info ] [MainThread]:   settings: {}
+[0m12:51:10.819386 [info ] [MainThread]:   external_root: .
+[0m12:51:10.821006 [info ] [MainThread]:   use_credential_provider: None
+[0m12:51:10.822859 [info ] [MainThread]:   attach: None
+[0m12:51:10.824194 [info ] [MainThread]:   filesystems: None
+[0m12:51:10.825676 [info ] [MainThread]:   remote: None
+[0m12:51:10.826750 [info ] [MainThread]:   plugins: None
+[0m12:51:10.827551 [info ] [MainThread]:   disable_transactions: False
+[0m12:51:10.828638 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m12:51:11.642183 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m12:51:11.821381 [debug] [MainThread]: Using duckdb connection "debug"
+[0m12:51:11.821966 [debug] [MainThread]: On debug: select 1 as id
+[0m12:51:11.822460 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:51:11.854765 [debug] [MainThread]: SQL status: OK in 0.032 seconds
+[0m12:51:11.856779 [debug] [MainThread]: On debug: Close
+[0m12:51:11.857521 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:51:11.858428 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:51:11.859263 [info ] [MainThread]: Your new dbt project "customer_segmentation_pipeline" was created!
+Initialized new project in D:\Nextcloud\vcortes\Vicky\Cursos\Ironhack DE Bootcamp\dbt_demo\customer_segmentation_pipeline\customer_segmentation_pipeline
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:51:11.861390 [debug] [MainThread]: Command `dbt init` succeeded at 12:51:11.861115 after 6.41 seconds
+[0m12:51:11.862079 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:51:11.862705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264C8083A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264C8646B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264C8596580>]}
+[0m12:51:11.863276 [debug] [MainThread]: Flushing usage events
+[0m12:51:12.519395 [debug] [MainThread]: An error was encountered while trying to flush usage events
